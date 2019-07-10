@@ -1,3 +1,15 @@
+This repo is meant solely to reproduce https://github.com/webpack-contrib/worker-loader/issues/174
+
+Here's how I was able to use it to reproduce the issue.
+
+* Clone the repository
+* cd in and run `yarn && yarn start`
+* Open http://localhost:3000/
+* Click *increment the counter*
+* Check the developer console. I see: `ReferenceError: window is not defined`
+
+<hr />
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
